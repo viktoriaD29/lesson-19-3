@@ -10,9 +10,18 @@
   font-size: 16px;
   font-family: monospace;
   text-transform: uppercase;
-  animation: moving 1s infinite;
-  animation: blinking 1s linear infinite;
-  
+  animation: moving 2s infinite;
+  animation: blinking 2s linear infinite;
+}
+
+.rect {
+  background-color: black;
+  width: 10px;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  animation: blinking 2s linear infinite;
+  animation: moving 2s infinite;
 }
 
 @keyframes blinking {
@@ -35,14 +44,4 @@
   to {
     left: 70px;
   }
-}
-
-.rect {
-  background-color: black;
-  width: 10px;
-  height: 4px;
-  border-radius: 2px;
-  position: absolute;
-  animation: blinking 1s linear infinite;
-  animation: moving 1s infinite;
 }
